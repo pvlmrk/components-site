@@ -1,0 +1,25 @@
+.form-text-area {
+    position: relative;
+}
+
+textarea {
+    width: 350px;
+    height: 80px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid #6c727f; /* Set the default border */
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    
+}
+
+textarea:focus {
+    outline: 2px solid #2f66c9;
+}
+
+@media (max-width: 430px) {
+    textarea {
+        width: 200px;
+    }
+}

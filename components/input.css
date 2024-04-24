@@ -1,0 +1,45 @@
+.form-input {
+  position: relative;
+  width: 200px;
+  height: 38px;
+}
+
+.form-input input::placeholder {
+  opacity: 0;
+}
+
+.form-input input {
+  width: 100%;
+  height: 38px;
+  padding: 15px;
+  outline: none;
+  border: 1px solid gray;
+  box-sizing: border-box;
+  border-radius: 8px;
+  transition: border-color 0.2s;
+}
+
+.form-input input:focus {
+  border-color: #2f66c9;
+  border: 2px solid #2f66c9;
+}
+
+.form-input label {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #6c727f;
+  letter-spacing: 1px;
+  transition: 0.2s;
+}
+
+.form-input input:focus + label,
+.form-input input:not(:placeholder-shown) + label {
+  top: -5px;
+  left: 5px;
+  font-size: 0.75rem;
+  color: #2f66c9;
+  background: #fff;
+  padding: 7px;
+}

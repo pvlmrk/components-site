@@ -1,0 +1,106 @@
+body {
+    font-family: 'Rubik', sans-serif;
+}
+
+header {
+    padding: 20px 20%;
+}
+
+aside {
+    flex: 1;
+}
+
+aside ul {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 10px;
+}
+
+aside ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 5px 15px;
+    border-radius: 8px;
+    border: 2px solid black;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+aside ul li a:hover {
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 1) 2px 2px 0;
+    transition: .2s ease;
+}
+
+aside ul li a.active {
+    background-color: #0d68d0;
+    color: white;
+}
+
+main {
+    flex-direction: row;
+    gap: 25px;
+    padding: 75px 20%;
+}
+
+section {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+main p {
+    color: #646464;
+    width: 90%;
+}
+
+.view {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+section > div {
+    display: grid;
+    place-items: center;
+    border: 2px solid black;
+    min-height: 400px;
+    border-radius: 8px;
+    position: relative;
+}
+
+@media (max-width: 1400px) {
+    header {
+        padding: 20px 10%;
+    }
+    main {
+        padding: 75px 10%;
+    }
+}
+
+@media (max-width: 1000px) {
+    header {
+        padding: 20px 5%;
+    }
+    main {
+        padding: 75px 5%;
+    }
+}
+
+@media (max-width: 700px) {
+    aside nav ul{
+        flex-direction: row;
+        gap: 25px;
+        flex-wrap: wrap;
+    }
+    main {
+        flex-direction: column-reverse;
+        padding: 30px 5%;
+    }
+}

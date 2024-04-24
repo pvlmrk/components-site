@@ -1,0 +1,32 @@
+input[type="radio"] {
+    position: absolute;
+    visibility: hidden;
+    display: none;
+  }
+  
+  label {
+    color: lighten(#2f66c9, 40%);
+    display: inline-block;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 5px 20px;
+  }
+  
+  input[type="radio"]:checked + label {
+    color: lighten(#2f66c9, 60%);
+    background: #2f66c9;
+    color: white;
+    transition: .2s ease;
+  }
+  
+  label + input[type="radio"] + label {
+    border-left: solid 2px #2f66c9;
+    
+  }
+  .radio-group {
+    border: solid 2px #2f66c9;
+    display: inline-block;
+    margin: 20px;
+    border-radius: 999px;
+    overflow: hidden;
+  }

@@ -1,0 +1,179 @@
+header {
+  border-bottom: 2px solid black;
+  padding: 20px 6%;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Rubik", sans-serif;
+}
+
+.logo {
+  font-size: 24px;
+  text-decoration: none;
+  color: black;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav > a {
+  text-decoration: none;
+  color: black;
+}
+
+nav > a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 75px 6%;
+  display: flex;
+
+  flex-direction: column;
+  gap: 75px;
+}
+
+h1 {
+  font-size: 36px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  width: 60%;
+}
+
+section.components-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 150px);
+  grid-column-gap: 40px;
+  grid-row-gap: 60px;
+}
+
+.component {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s ease;
+  font-family: "Rubik", sans-serif;
+  padding: 15px 20px;
+  border: 1px solid black;
+  display: grid;
+  place-items: center;
+  text-decoration: none;
+  color: black;
+}
+
+.component:hover {
+  transform: translateY(-2px);
+  transition: .2s ease;
+  box-shadow: rgba(0, 0, 0, 1) 5px 5px 0;
+}
+
+.component:hover p {
+  background-color: black;
+  color: white;
+  transition: .2s ease;
+}
+
+.component p {
+  background-color: white;
+  padding: 10px 20px;
+  border: 2px solid black;
+  border-radius: 8px;
+}
+
+.component:nth-child(1) {
+  background: url(images/button.png);
+}
+
+.component:nth-child(2) {
+  background: url(images/dropdown.png) bottom;
+  
+}
+
+.component:nth-child(3) {
+  background: url(images/input.png) -40px +4px;
+}
+
+.component:nth-child(4) {
+  background: url(images/textarea.png);
+  background-size: contain;
+}
+
+.component:nth-child(5) {
+  background: url(images/switch.png) repeat;
+}
+
+.component:nth-child(6) {
+  background: url(images/radio.png) repeat center +5px;
+}
+
+.component:nth-child(7) {
+  background: url(images/cta.png) no-repeat center;
+  background-size: contain;
+}
+
+.component:nth-child(8) {
+  background: url(images/alert.png) ;
+  background-size: contain;
+}
+
+.component:nth-child(9) {
+  background: url(images/accordion.png) no-repeat center;
+  background-size: contain;
+}
+
+.component:nth-child(10) {
+  background: url(images/card.png)  center;
+  background-size: contain;
+}
+
+.component:nth-child(11) {
+  background: url(images/modal.png) center no-repeat;
+  
+}
+
+.component:nth-child(12) {
+  background: url(images/navbar.png) center no-repeat;
+  background-size: contain;
+}
+
+.component p {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+@media (max-width: 1200px) {
+  section.components-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 120px);
+  }
+  h1 {
+    width: 90%;
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 750px) {
+  section.components-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 150px);
+    grid-row-gap: 40px;
+    grid-column-gap: 20px;
+  }
+  h1 {
+    width: 90%;
+    font-size: 24px;
+  }
+  main {
+    gap: 50px;
+    padding: 50px 4%;
+  }
+  header {
+    padding: 20px 4%;
+  }
+  .component p {
+    font-size: 16px;
+    padding: 5px;
+  }
+}

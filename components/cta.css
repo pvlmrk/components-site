@@ -1,0 +1,54 @@
+.cta {
+  background-color: #0d68d0;
+  color: white;
+  width: 500px;
+  padding: 1rem 1.5rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+.cta div {
+  display: flex;
+  gap: 1rem;
+}
+
+.cta i {
+  color: white;
+}
+
+p.signup {
+    color: white;
+}
+
+.primary {
+  background-color: white;
+  color: #0d68d0;
+}
+
+button.primary:hover {
+  box-shadow: none !important;
+  background-color: #0d68d0;
+  color: white;
+}
+
+@media (max-width: 888px) {
+    .cta {
+        width: 400px;
+    }
+}
+
+@media (max-width: 540px) {
+    .cta {
+        width: 300px;
+    }
+}
+
+@media (max-width: 430px) {
+    .cta {
+        width: 200px;
+    }
+}

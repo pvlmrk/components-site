@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://api.ssps.cajthaml.eu/file/64d9f18f79dad891e8a07c73">
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="button.css">
+  <link rel="stylesheet" href="dropdown.css">
+  <link rel="stylesheet" href="components.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Dropdown</title>
+</head>
+<body>
+  <header>
+    <a class="logo" href="../index.html">ComponentSnippets</a>
+    <nav>
+      <a href="../index.html">Home</a>
+    </nav>
+  </header>
+  <main>
+    <aside>
+        <nav>
+            <ul>
+                <li><a href="button.html">Button</a></li>
+                <li><a class="active" href="dropdown.html">Dropdown</a></li>
+                <li><a href="input.html">Input</a></li>
+                <li><a href="textarea.html">Textarea</a></li>
+                <li><a href="switch.html">Switch</a></li>
+                <li><a href="radio.html">Radio Group</a></li>
+                <li><a href="cta.html">Call to Action</a></li>
+                <li><a href="alert.html">Alert</a></li>
+                <li><a href="accordion.html">Accordion</a></li>
+                <li><a href="card.html">Card</a></li>
+                <li><a href="modal.html">Modal</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <section>
+        <h2>Dropdown</h2>
+        <p>Dropdowns are used for user interaction in digital interfaces, enabling smooth navigation and interaction. These components ensure clear, intuitive controls for seamless engagement.</p>
+        <div>
+            <div class="btn-group">
+                <button class="primary" onclick="toggleDropdown()">
+                    Open dropdown <i class="fa-solid fa-caret-down" id="caret"></i>
+                </button>
+                <div class="dropdown" id="dropdown">
+                    <ul>
+                        <li>Option 1</li>
+                        <li>Option 2</li>
+                        <li>Option 3</li>
+                    </ul>
+                </div>
+            </div>
+            <a class="view" target="_blank" href="https://codepen.io/username5465/pen/jORdrKm">View Code</a>
+        </div>
+    </section>
+  </main>
+  <script src="dropdown.js"></script>
+</body>
+</html>

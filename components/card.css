@@ -1,0 +1,56 @@
+.card {
+    border: 1px solid #d9d9d9;
+    width: 300px;
+    height: auto;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+}
+
+.card p:nth-child(1) {
+    font-weight: bold;
+    margin-bottom: 0;
+    font-size: 24px;
+    margin-top: .5rem;
+    color: black;
+}
+
+.card p:nth-child(2) {
+    color: #6c727f;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.inputs {
+    display: flex;
+    justify-content: space-between;
+}
+
+#email {
+    width: 90%;
+}
+
+.width {
+    width: 200px;
+}
+
+.inputs {
+    margin-bottom: .75rem;
+}
+
+.secondary {
+    background-color: white;
+    color: #2f66c9;
+    outline: 2px solid #2f66c9;
+}
+
+.buttons {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 500px) {
+    .card {
+        width: 200px;
+    }
+}

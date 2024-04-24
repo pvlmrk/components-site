@@ -1,0 +1,60 @@
+i {
+  margin-left: 5px;
+}
+
+.btn-group {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.primary {
+  position: relative;
+}
+
+.dropdown {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-100%, -100%);
+  color: black;
+  width: 150px;
+  height: auto;
+  border: 2px solid #f1f1f1;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px -2px rgb(0, 0, 0, 0.05);
+  display: none;
+}
+
+.dropdown.active {
+  transform: translate(0, 40px);
+}
+
+section > div ul {
+  margin: 0;
+  padding: 0;
+}
+
+section > div ul > li {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: center;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+section > div ul > li:hover {
+  background-color: #f3f4f6;
+}
+
+section > div ul > li:active {
+  background-color: #dedfe1;
+}
+
+#caret {
+  transition: transform 0.3s ease;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
